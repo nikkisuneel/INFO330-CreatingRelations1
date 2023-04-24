@@ -20,3 +20,6 @@ INSERT INTO rooms VALUES (400, (SELECT id FROM buildings WHERE name="Mary Gates 
 INSERT INTO rooms VALUES (500, (SELECT id FROM buildings WHERE name="Johnson Hall"), 50);
 INSERT INTO rooms VALUES (700, (SELECT id FROM buildings WHERE name="Guggenheim Hall"), 70);
 INSERT INTO rooms VALUES (600, (SELECT id FROM buildings WHERE name="Johnson Hall"), 60);
+INSERT INTO rooms VALUES (400, (SELECT id FROM buildings WHERE name="Mary Gates Hall"), 40);
+INSERT INTO rooms VALUES (400, (SELECT id FROM buildings WHERE name="Mary Gates Hall"), 40);
+
