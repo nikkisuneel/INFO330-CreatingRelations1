@@ -16,9 +16,7 @@ CREATE TABLE rooms (
   FOREIGN KEY(buildingid) REFERENCES buildings(id)
 );
 
-INSERT INTO rooms (number, buildingid, seating) VALUES (400, 2, 40);
-INSERT INTO rooms (number, buildingid, seating) VALUES (500, 2, 50);
-INSERT INTO rooms (number, buildingid, seating) VALUES (700, 2, 70);
-INSERT INTO rooms (number, buildingid, seating) VALUES (600, 2, 60);
-INSERT INTO rooms (number, buildingid, seating) VALUES (400, 2, 40);
-INSERT INTO rooms (number, buildingid, seating) VALUES (400, 1, 40);
+INSERT INTO rooms VALUES (400, (SELECT id FROM buildings WHERE name="Mary Gates Hall"), 40);
+INSERT INTO rooms VALUES (500, (SELECT id FROM buildings WHERE name="Johnson Hall"), 50);
+INSERT INTO rooms VALUES (700, (SELECT id FROM buildings WHERE name="Guggenheim Hall"), 70);
+INSERT INTO rooms VALUES (600, (SELECT id FROM buildings WHERE name="Johnson Hall"), 60);
