@@ -10,6 +10,7 @@ INSERT INTO buildings (name, shortname) VALUES ('Guggenheim Hall', 'GWN');
 INSERT INTO buildings (name, shortname) VALUES ('Johnson Hall', 'JHN');
 
 CREATE TABLE rooms (
+  id INTEGER PRIMARY KEY,
   number INTEGER,
   buildingid INTEGER,
   seating INTEGER,
